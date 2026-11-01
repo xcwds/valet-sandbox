@@ -14,4 +14,16 @@ What the demo shows:
 - Merging always needs a person: `main` requires a pull request approved by a code owner
   ([`.github/CODEOWNERS`](.github/CODEOWNERS)).
 
+## Running the demo
+
+On the machine running Valet (see [docs/deploy.md](https://github.com/xcwds/valet/blob/main/docs/deploy.md)),
+from a checkout of this repository:
+
+```sh
+path/to/valet/deploy/devcontainer/new-job.sh implementer xcwds/valet-sandbox --ttl 2h
+```
+
+then **Reopen in Container** within ten minutes. The container enrolls, and git, HTTPS and MCP all
+go through Valet.
+
 Nothing here matters: branches and pull requests come and go.
